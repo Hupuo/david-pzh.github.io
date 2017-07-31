@@ -333,92 +333,6 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-mavic" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/28/mavic/">“换个角度看世界”</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/28/mavic/" class="archive-article-date">
-  	<time datetime="2017-03-28T13:47:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<ul>
-<li>收到Mavic两天了，疯狂体验了一阵，不得不说，这台小机器实在太讨我喜欢了。。</li>
-<li><strong>DJI飞控逆天的室内外悬停技术/ OcuSync  7km黑科技图传/全球最小三轴云台/前视下视双目传感器/视觉跟踪拍摄功能/27分钟坚挺续航…</strong></li>
-</ul>
-<ul>
-<li>这么多黑科技居然还做到了一瓶矿泉水大小的可折叠机身内。。对这种又迷你又高科技还会飞来飞去的东西简直完全没有抵抗力。。</li>
-<li>详细的介绍可以看评测视频 <a href="http://www.bilibili.com/video/av7003452/?from=search&amp;seid=1762833053443354889" target="_blank" rel="external">Mavic全方位评测</a></li>
-</ul>
-</blockquote>
-<p><img src="/img/mavic01.jpg" alt="pic"> </p>
-        
-          <a class="article-more-a" href="/2017/03/28/mavic/#more">继续阅读 >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/28/mavic/">全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-faceapp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -531,6 +445,99 @@ var _hmt = _hmt || [];
 
 
   
+    <article id="post-btapp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/12/btapp/">蓝牙调试APP-可控</a>
+    </h1>
+  
+
+        
+        <a href="/2017/01/12/btapp/" class="archive-article-date">
+  	<time datetime="2017-01-12T12:32:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<ul>
+<li>其实我很早之前就做过一个蓝牙的调试APP <a href="http://www.pengzhihui.xyz/2015/12/09/nano/" target="_blank" rel="external">蛋黄2.0</a>，那个版本只是配合小机器人进行一些无线控制。当时功能做的比较多，常用的调试模块都加上去了，但是很多软件细节一直没有完善，也由于没有时间写Arduino配套的库，所以就没有发布。最近也看到论坛很多小车啊机器人啊的项目，似乎有必要为大家提供一个完善的遥控和无线调试解决方案，所以又翻出这个工程，小通了个宵填上了这个遥远的坑。。。</li>
+<li>APP取名叫【可控】，基本功能都已经完成了，已经发布在腾讯应用宝上，需要的可以自行下载体验，下面会详细介绍一下功能和使用方法。</li>
+</ul>
+</blockquote>
+<p><img src="http://i2.tiimg.com/1949/f64c2a128727381e.gif" alt="pic1"></p>
+<h2 id="APP功能"><a href="#APP功能" class="headerlink" title="APP功能"></a>APP功能</h2><p>APP是通过蓝牙连接蓝牙模块然后和硬件交互的，点击右上角的图标连接就行（当然模块需要事先在手机设置里配对），依次介绍一下各个标签的功能：</p>
+<ul>
+<li><strong>摇杆功能</strong>：连接硬件后可以在程序里通过库函数读取到摇杆的数值，用于遥控小车什么的最方便啦，比如我之前的 <a href="http://www.pengzhihui.xyz/2015/11/05/qbot/" target="_blank" rel="external">Qbot</a> 就是用这个遥控的</li>
+<li><strong>重力感应功能</strong>：跟摇杆一样，不过这里变成摇晃手机进行控制了，依然是可以在Arduino程序里读出数据</li>
+<li><strong>曲线功能</strong>：提供3个通道数据的曲线绘制功能，曲线的数据可以在Arduino库函数里进行调用发送，方便用于调节参数之类的</li>
+<li><strong>串口助手功能</strong>：前面几个模式都是可以调用库函数进行方便的交互的，但是如果只想按自己的指令来操作，或者只是想有个串口显示的窗口，就可以用到这个模块，既可以发送数据也可以接收，是完全透传的。</li>
+</ul>
+        
+          <a class="article-more-a" href="/2017/01/12/btapp/#more">继续阅读 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">项目</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Android</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/01/12/btapp/">全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-zhishi" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -553,7 +560,7 @@ var _hmt = _hmt || [];
       
         <pre><code>“微信小程序是一种不需要下载安装即可使用的应用，它实现了应用「触手可及」的梦想，用户扫一扫或搜一下即可打开应用。”
 </code></pre><blockquote>
-<p><em>以上是腾讯官方对小程序的描述，简单的说微信小程序就是运行与微信之中的介于网页app和本地app之间的一种程序，与订阅号、企业号、服务号平行。截至目前还在内测之中，听马化腾说春节前会在微信正式上线。。</em></p>
+<p><em>以上是腾讯官方对小程序的描述，简单的说微信小程序就是运行与微信之中的介于网页app和本地app之间的一种程序，与订阅号、企业号、服务号平行。截至目前还在内测之中，听腾讯说春节前会在微信正式上线。。</em></p>
 <ul>
 <li>这里做了个小Demo，是最近跟同学一起参加比赛的一个作品。</li>
 <li>本小程序是用于连接我电的<strong>校内新闻网</strong>和<strong>图书馆</strong>，方便同学们随时随地了解校园动态，掌握最新通知，查询图书借阅详情。</li>
@@ -570,12 +577,9 @@ var _hmt = _hmt || [];
 <li>专题新闻（图片）</li>
 </ul>
 <h2 id="准备接入的内容-amp-功能扩展"><a href="#准备接入的内容-amp-功能扩展" class="headerlink" title="准备接入的内容&amp;功能扩展"></a>准备接入的内容&amp;功能扩展</h2><ul>
-<li><p>清水河畔BBS</p>
-</li>
-<li><p>消息收藏功能</p>
-</li>
+<li>清水河畔BBS</li>
+<li>消息收藏功能</li>
 <li><p>etc.</p>
-<p>​</p>
 <p>github仓库地址：<a href="https://github.com/david-pzh/Cheese-UESTC.git" target="_blank" rel="external">Zhishi</a></p>
 </li>
 </ul>
@@ -642,7 +646,7 @@ var _hmt = _hmt || [];
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
@@ -750,6 +754,10 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ARM</a>
               </li>
              
@@ -759,10 +767,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">项目</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -782,15 +786,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">C#</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -806,6 +806,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
@@ -814,11 +818,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
               </li>
              
               <li class="article-tag-list-item">
