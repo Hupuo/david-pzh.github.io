@@ -547,7 +547,7 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/02/inkbox/">蓝牙调试APP-可控</a>
+      <a class="article-title" href="/2017/01/02/inkbox/">随身二维码 - inkBox</a>
     </h1>
   
 
@@ -567,53 +567,10 @@ var _hmt = _hmt || [];
 <p><img src="/img/inkbox01.jpg" alt="pic"></p>
 <p>这样的。。。</p>
 <p>然后心想着，买来不用浪费了啊，<font color="#ff0000" size="4px">电池都买了，不配个板子岂不是血亏？</font>  </p>
-<p>正好低功耗相关的项目还没有玩过，于是free style了这么个东西…</p>
-<p><img src="/img/inkbox10.jpg" alt="pic"></p>
-<p><img src="/img/inkbox03.jpg" alt="pic"></p>
-<blockquote>
-<p>也设计了个外壳，用sla打印效果不错</p>
-</blockquote>
-<p><img src="/img/inkbox04.jpg" alt="pic"></p>
-<blockquote>
-<p>总的来说，这就是一个基于电子墨水屏的显示器…</p>
-</blockquote>
-<div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XMjg3Nzk1Mjc1Mg" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe><br></div>  
-
-<h2 id="当然重点在于低功耗，使用的元件是："><a href="#当然重点在于低功耗，使用的元件是：" class="headerlink" title="当然重点在于低功耗，使用的元件是："></a>当然重点在于低功耗，使用的元件是：</h2><ul>
-<li><p><strong>主控STM32L0系列MCU</strong></p>
-<p>主打低功耗的系列，本身F系列已经具有低功耗设计了，这个L更是夸张，经过测试功耗也确实很给力，官方的数据：</p>
-</li>
-</ul>
-<p><img src="/img/inkbox06.png" alt="pic"></p>
-<p>​    我这个小板子上是运行在STOP模式，也就是待机电流在1uA左右</p>
-<ul>
-<li><p><strong>蓝牙BLE模块</strong><br>蓝牙4.0标准包含两个蓝牙标准，准确的说，是一个双模的标准，它包含传统蓝牙部分（向下兼容2.0）和低功耗蓝牙部分（Bluetooth Low Energy），顾名思义BLE的特性就是极其省电，现在市面上绝大多数的可穿戴设备都是基于BLE的。</p>
-<p>我使用的是这款模块，挺便宜的，10元左右，也很小巧<br><img src="/img/inkbox07.jpg" alt="pic"></p>
-<p>BLE的蓝牙模块不再是普通的串口透传（像HC-05），而是使用GATT(Generic Attribute Profile)框架进行控制通信，而且是即用即连无需配对（连接速度在毫秒级），功耗表现如下：</p>
-<ul>
-<li>睡眠模式 0.3uA    </li>
-<li>广播（广播周期20ms）0.15-1.01mA    </li>
-<li>连接状态（连接间隔20ms） 2.06mA     </li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><strong>电子墨水屏</strong><br>要说市面上最省电的屏幕是啥，e-ink屏幕绝对是首选，不刷新不耗电，断电也能保留画面，kindle上的同款神器，用的1.54寸的一款三色彩屏<br> <img src="/img/inkbox08.jpg" alt="pic"></li>
-</ul>
-<ul>
-<li><strong>买一赠N的纽扣电池…</strong></li>
-</ul>
-<p>板子今天刚到，测了下各部分功能，都正常工作，工作流程是这样的：</p>
-<font color="#ff0000" size="4px">板子待机（蓝牙保持广播等待手机连接）–&gt; 手机连接–&gt;蓝牙唤醒主控–&gt;传输图像数据，刷新屏幕–&gt;app退出，断开连接–&gt;板子待机</font>  
-
-<p>所以待机耗电主要在蓝牙广播上，经测试电流大概在0.15mA左右（代码部分还很粗糙，其实有很大优化空间），按这个功耗计算的话，一颗电池200mAh-300mAh可以使用：</p>
-<p><font color="#ff0000" size="4px">200mAh/0.15mA = 1333h = 55天，大概两个月</font><br>  <img src="/img/inkbox09.jpg" alt="pic"></p>
-<p>经过优化之后（比如调整广播时间间隔，毕竟没有必要20ms检查一次有没有连接；如果增加一个按键用来手动唤醒的话，用个两三年估计都没问题），应该可以轻松达到半年左右的使用时间，板子可用~</p>
-<p>再放几张图片，APP还得后面继续做，个人是想做成APP做图像处理生成二维码等图片然后传给模块这个样子，当然得看后面有没有时间继续搞了，毕竟心血来潮买个电池搞个板子什么的….</p>
-<blockquote>
-<p>要是后面做好了的话也会全部开源，现在先发出原理图吧，有需要的拿去研究下…<br>  <img src="/img/inkbox13.png" alt="pic"></p>
-</blockquote>
-
+<p>正好低功耗相关的项目还没有玩过，于是free style了这么个东西…<br>
+        
+          <a class="article-more-a" href="/2017/01/02/inkbox/#more">继续阅读 >></a>
+        
       
 
       
@@ -1239,10 +1196,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ARM</a>
               </li>
              
@@ -1251,15 +1204,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">生日快乐🎂</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1275,6 +1228,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">C#</a>
               </li>
              
@@ -1287,15 +1248,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">生活</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+                <a href="javascript:void(0)" class="js-tag color4">LUA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1304,10 +1265,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">HTML</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
               </li>
             
             <div class="clearfix"></div>
