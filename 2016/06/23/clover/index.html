@@ -17,7 +17,7 @@
 <meta property="og:description" content="小氪Clover   继初代蛋黄和2.0版的Nano之后，蛋黄迎来3.0版更新啦。 这次基于Android平台制作，融入了视觉、语音、3D、物联网等元素，蛋黄更好玩更实用了~  3.0版蛋黄代号为小氪，小氪源于英文名Clover，Clever+Love表明小氪聪明又可爱，同时Clover意为三叶草，指代第三个版本更新。小氪的构思和制作从6月份开始，断断续续一直到前段时间大概实现了基本的功能，由于">
 <meta property="og:image" content="http://pengzhihui.xyz/img/clover01.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/clover04.jpg">
-<meta property="og:updated_time" content="2017-07-12T10:39:32.000Z">
+<meta property="og:updated_time" content="2017-07-12T10:39:32.765Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="蛋黄3.0-智能管家小氪">
 <meta name="twitter:description" content="小氪Clover   继初代蛋黄和2.0版的Nano之后，蛋黄迎来3.0版更新啦。 这次基于Android平台制作，融入了视觉、语音、3D、物联网等元素，蛋黄更好玩更实用了~  3.0版蛋黄代号为小氪，小氪源于英文名Clover，Clever+Love表明小氪聪明又可爱，同时Clover意为三叶草，指代第三个版本更新。小氪的构思和制作从6月份开始，断断续续一直到前段时间大概实现了基本的功能，由于">
@@ -85,9 +85,11 @@ var _hmt = _hmt || [];
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">搜索文章 &gt;&gt;</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
+    			
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">搜索文章 &gt;&gt;</a>
     			
             
     			
@@ -454,6 +456,8 @@ MathJax.Hub.Queue(function() {
       
     
       
+      
+      
     
       
     
@@ -463,9 +467,11 @@ MathJax.Hub.Queue(function() {
     
     
       
-      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">搜索文章 &gt;&gt;</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">搜索文章 &gt;&gt;</a></li>
       
         
       
@@ -488,6 +494,18 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ARM</a>
               </li>
              
@@ -496,31 +514,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Rhino</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">生日快乐🎂</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">C#</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -536,15 +530,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
+                <a href="javascript:void(0)" class="js-tag color1">Rhino</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">C#</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">FPGA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -556,7 +558,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -565,6 +567,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
               </li>
             
             <div class="clearfix"></div>
@@ -610,6 +616,26 @@ MathJax.Hub.Queue(function() {
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://www.arduino.cn/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Arduino中文网</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://www.csksoft.net/blog/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>创友老陈</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://vkwk.space/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>同门师弟</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
     
 
     

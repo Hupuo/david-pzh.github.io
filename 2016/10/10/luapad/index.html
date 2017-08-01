@@ -9,7 +9,7 @@
   <title>让STM32运行Lua脚本 | 稚晖的个人站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="突然想起来还做了个小板子一直没时间玩,把资料先放出来...   • Lua是一个基于C的小巧的脚本语言,由标准C编写而成，所以可以很方便地移植到几乎在所有操作系统和平台上.Lua和Python有些类似,但在目前所有脚本引擎中，Lua的速度是最快的,这一切都决定了Lua是作为嵌入式脚本的最佳选择.此前非常火的nodeMCU(基于ESP8266)就是运行的Lua脚本. • 关于这次做的板子,因为之前有">
-<meta name="keywords" content="ARM,项目,LUA">
+<meta name="keywords" content="项目,ARM,LUA">
 <meta property="og:type" content="article">
 <meta property="og:title" content="让STM32运行Lua脚本">
 <meta property="og:url" content="http://pengzhihui.xyz/2016/10/10/luapad/index.html">
@@ -19,7 +19,7 @@
 <meta property="og:image" content="http://pengzhihui.xyz/img/luapad2.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/luapad3.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/luapad4.jpg">
-<meta property="og:updated_time" content="2017-07-12T10:40:33.000Z">
+<meta property="og:updated_time" content="2017-07-12T10:40:33.324Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="让STM32运行Lua脚本">
 <meta name="twitter:description" content="突然想起来还做了个小板子一直没时间玩,把资料先放出来...   • Lua是一个基于C的小巧的脚本语言,由标准C编写而成，所以可以很方便地移植到几乎在所有操作系统和平台上.Lua和Python有些类似,但在目前所有脚本引擎中，Lua的速度是最快的,这一切都决定了Lua是作为嵌入式脚本的最佳选择.此前非常火的nodeMCU(基于ESP8266)就是运行的Lua脚本. • 关于这次做的板子,因为之前有">
@@ -87,9 +87,11 @@ var _hmt = _hmt || [];
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">搜索文章 &gt;&gt;</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
+    			
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">搜索文章 &gt;&gt;</a>
     			
             
     			
@@ -251,11 +253,11 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ARM</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">项目</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">项目</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ARM</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -452,6 +454,8 @@ MathJax.Hub.Queue(function() {
       
     
       
+      
+      
     
       
     
@@ -461,9 +465,11 @@ MathJax.Hub.Queue(function() {
     
     
       
-      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">搜索文章 &gt;&gt;</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">搜索文章 &gt;&gt;</a></li>
       
         
       
@@ -486,6 +492,18 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ARM</a>
               </li>
              
@@ -494,31 +512,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Rhino</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">生日快乐🎂</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">C#</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -534,15 +528,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
+                <a href="javascript:void(0)" class="js-tag color1">Rhino</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">C#</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">FPGA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -554,7 +556,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -563,6 +565,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
               </li>
             
             <div class="clearfix"></div>
@@ -608,6 +614,26 @@ MathJax.Hub.Queue(function() {
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://www.arduino.cn/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Arduino中文网</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://www.csksoft.net/blog/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>创友老陈</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://vkwk.space/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>同门师弟</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
     
 
     

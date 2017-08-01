@@ -77,9 +77,11 @@ var _hmt = _hmt || [];
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">搜索文章 &gt;&gt;</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
+    			
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">搜索文章 &gt;&gt;</a>
     			
             
     			
@@ -169,135 +171,32 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-haski" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-qbot" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/16/haski/">我是哈士奇脑残粉🐶</a>
+      <a class="article-title" href="/2015/11/05/qbot/">迷你巡线机器人QBot</a>
     </h1>
   
 
         
-        <a href="/2016/05/16/haski/" class="archive-article-date">
-  	<time datetime="2016-05-16T10:57:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-16</time>
+        <a href="/2015/11/05/qbot/" class="archive-article-date">
+  	<time datetime="2015-11-05T12:45:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-11-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <blockquote>
-<p>多么可爱的狗崽子啦😀</p>
-</blockquote>
-<p><img src="/img/haski1.jpg" alt="pic"></p>
-<p><img src="/img/haski2.jpg" alt="pic"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">文艺复兴</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/05/16/haski/">全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
+        <p><img src="/img/qbot1.jpg" alt="Qbot"></p>
+<p>Qbot是今年暑假实习的时候跟同事一起构思的一个项目，主要起因是看到这个会解迷宫的巡线小机器人<a href="http://v.youku.com/v_show/id_XMzU4MTQ4NzIw.html" target="_blank" rel="external">3pi</a>，觉得很搞笑，想弄一个耍耍，但是这玩意国内并不好买，于是打算自己动手…</p>
+<p><img src="/img/qbot2.png" alt="Qbot"></p>
+<p>仔细想想这东西的可DIY性还是挺高的，除了巡线外，解谜宫，遥控，对战等玩法还有很多，要是基于Arduino开源当然就更合适啦。<br><strong><em>（点击more继续阅读-&gt;）</em></strong><br>
         
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-trace" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/05/trace/">“迹”APP &amp; 目标追踪小车Tmp</a>
-    </h1>
-  
-
-        
-        <a href="/2016/05/05/trace/" class="archive-article-date">
-  	<time datetime="2016-05-05T08:32:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-05-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong><font size="4px">“迹” for Android</font></strong> </p>
-<blockquote>
-<p>“迹”是一个基于OpenCV的图像处理APP，它可以让手机通过摄像头实时跟踪设定的颜色目标，并且通过手机蓝牙将目标坐标位置和大小等信息输出，配合蓝牙串口模块和我写的配套Arduino数据接收库，可以实现很多有趣的功能~ 这篇文章主要讲解一下“迹”的使用方法，以及如何通过目标追踪功能制作一个简单的小车。</p>
-</blockquote>
-<pre><code>APP软件运行界面：
-</code></pre><p><img src="/img/trace.gif" alt="pic"><img src="/img/trace01.png" alt="pic"></p>
-<pre><code>安装方法
-</code></pre><ul>
-<li><strong>直接安装Trace.apk，Android5.0以上系统需要到设置里赋予应用相机和蓝牙权限</strong></li>
-</ul>
-<pre><code>使用方法
-</code></pre><ul>
-<li><p>进软件之后可以点击连接蓝牙，选择你的蓝牙模块（模块需要事先在手机系统蓝牙设置里面配对好），连接上之后如果有目标信息就会通过蓝牙发送到模块上，Arduino进行读取就可以了。</p>
-</li>
-<li><p>点击左上角的按钮进入预览画面，此时在预览窗口中点击任何一个你想追踪的物体，就会自动进行处理输出数据了，顶栏会显示你选中的颜色。</p>
-</li>
-<li><p>这里说明一下，跟踪原理是以颜色为特征的，所以应该尽量避免视野中出现颜色相同的物体，同时如果发现跟踪物体的周围出现大量小块的目标块，可以适当调大屏幕下方的进度条，直到杂块消失只剩一个目标。</p>
-</li>
-</ul>
-<p><strong>说明一下屏幕下方各个控件的含义：</strong></p>
-<ul>
-<li>左边的按钮是切换手机前后镜头的（现在应该没有不带前置镜头的手机了吧…）</li>
-<li>进度条用于调节图像处理阈值，这个值用于色块过滤，可以理解为，用于设置最小的目标块的限制，也就是当目标小于一定程度就过滤掉。</li>
-<li>T、X、Y三个参数是目标的信息，XY是坐标大家都知道（坐标的最大值跟手机镜头分辨率有关）；T是目标的大小信息，如果检测到多个目标或者没有检测到任何目标这里会显示E（error）。T可以用于粗略得判断物体的远近（近大远小），不过更推荐的方式是用Y轴判断远近（见后文的小车）。</li>
-</ul>
-<p><font color="#4590a3" size="4px">演示视频</font>  </p>
-<div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XMTU2MTc0NTgxNg" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe><br></div>  
-
-<p><br><br>
-        
-          <a class="article-more-a" href="/2016/05/05/trace/#more">继续阅读 >></a>
+          <a class="article-more-a" href="/2015/11/05/qbot/#more">继续阅读 >></a>
         
       
 
@@ -312,6 +211,10 @@ var _hmt = _hmt || [];
 			 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">项目</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Altium Designer</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -321,10 +224,6 @@ var _hmt = _hmt || [];
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Arduino</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">OpenCV</a>
-        		</li>
       		
 		</ul>
 	</div>
@@ -333,7 +232,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/05/05/trace/">全文 >></a>
+          <a class="article-more-a" href="/2015/11/05/qbot/">全文 >></a>
         </p>
       
 
@@ -363,116 +262,31 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-ctrl" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-doubi-clock" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/23/ctrl/">Ctrl手环</a>
+      <a class="article-title" href="/2015/11/02/doubi-clock/">永不停歇的逗比钟君</a>
     </h1>
   
 
         
-        <a href="/2016/04/23/ctrl/" class="archive-article-date">
-  	<time datetime="2016-04-23T14:02:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-04-23</time>
+        <a href="/2015/11/02/doubi-clock/" class="archive-article-date">
+  	<time datetime="2015-11-01T16:30:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-11-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong><font color="#4590a3" size="5px">Ctrl Beta版粗来啦</font></strong><br><img src="/img/ctrl5.jpg" alt="pic"></p>
-<p>关注我的同学应该知道很久以前我开始尝试制作一个动作同步手环用于同步控制机械手（之前的方案是用Leap Motion），然后那个项目自从去年11月以来就断断续续一直没什么进展…倒也不是我懒，只是制作过程中发现细节的东西太多太复杂…比如多传感器的延迟，模块电源电路设计失误，上位机通信速率不足，最大的坑是惯性元件的漂移补偿…以及光电路就改了四版<br><img src="/img/ctrl4.jpg" alt="pic"></p>
-<p>目前有了点阶段性的成果，东西依然在完善中，如何提高稳定性以及把每个传感器节点化是下一步的探索方向</p>
-<div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XMTU0NzU0NTkyOA" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe><br></div>
+        <p>这是一只<font color="#4590a3" size="4px"><strong>用战术上的勤奋掩饰它战略上的懒惰</strong> </font> 的逗比钟</p>
+<div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XMTM4MTExNjQ2MA" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe><br></div>
 
-<p><br><br><img src="/img/ctrl2.jpg" alt="pic"></p>
-<p><img src="/img/ctrl3.jpg" alt="pic"></p>
-<p><img src="/img/ctrl1.jpg" alt="pic"></p>
+<p><br>  </p>
 
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ARM</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">C#</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/04/23/ctrl/">全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-IRemote" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/21/IRemote/">智能红外遥控</a>
-    </h1>
-  
-
-        
-        <a href="/2016/04/21/IRemote/" class="archive-article-date">
-  	<time datetime="2016-04-21T06:29:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-04-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="/img/IRemote2.jpg" alt="pic"><br>教研室在做一个机房监控的项目，其中貌似要求所有相关监测设备IP化，对于空调而言，实现通过网络远程控制的方案已经见怪不怪了，比如之前有点火的broadlink：</p>
-<p><strong><em>（点击more继续阅读 -&gt;）</em></strong><br>
-        
-          <a class="article-more-a" href="/2016/04/21/IRemote/#more">继续阅读 >></a>
-        
       
 
       
@@ -487,6 +301,10 @@ var _hmt = _hmt || [];
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">项目</a>
         		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Arduino</a>
+        		</li>
       		
 		</ul>
 	</div>
@@ -495,7 +313,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/04/21/IRemote/">全文 >></a>
+          <a class="article-more-a" href="/2015/11/02/doubi-clock/">全文 >></a>
         </p>
       
 
@@ -525,30 +343,279 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-valentine" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-weather-box" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/14/valentine/">2016.2.14</a>
+      <a class="article-title" href="/2015/10/12/weather-box/">天气宝宝</a>
     </h1>
   
 
         
-        <a href="/2016/02/14/valentine/" class="archive-article-date">
-  	<time datetime="2016-02-14T13:08:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-02-14</time>
+        <a href="/2015/10/12/weather-box/" class="archive-article-date">
+  	<time datetime="2015-10-12T15:51:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/img/valentine1.jpg" alt="pic"></p>
-<p>或许辨不清日升日落<br>或许看不到流云晚霞<br>不知道耳边溪流<br>咫尺可达<br>不知道天地浩瀚<br>人间喧哗<br>但我知道<br>星河在上<br>波光在下<br>我在你身边<br>等着你的回答</p>
-<p>—— 莱特昂·布兰朵</p>
-<p><img src="/img/valentine2.jpg" alt="pic"></p>
+        <p>今年暑假参加创客马拉松做的一个小玩意，整个制作只花了两天时间，作品看起来虽然略坑，但是我感觉这个思路挺好的，以后可以继续扩展做下去…  </p>
+<p>要是能缩小一点就更有趣啦<br>做个小盒子啦当个小礼物啦送个小女朋友啦多好玩<code>(*￣∇￣*)</code></p>
+<p>总的来说这就是个还原实景的天气盒子，它会用wifi自动联网获取天气数据，然后用<strong><em>神奇特效</em></strong>展示出来，看视频演示吧  </p>
+<h2 id="晴天"><a href="#晴天" class="headerlink" title="晴天"></a>晴天</h2><div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XMTM4MTExMDIyOA" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe><br></div>
+
+<p><br>  </p>
+<h2 id="雷雨"><a href="#雷雨" class="headerlink" title="雷雨"></a>雷雨</h2><div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XMTM4MTEwNjU4NA" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe><br></div>
+
+<p><br>  </p>
+<h2 id="地震（误）"><a href="#地震（误）" class="headerlink" title="地震（误）"></a>地震（误）</h2><div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XMTM4MTEwODMxNg" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe><br></div>
+
+<p><br>  </p>
+<h2 id="起雾"><a href="#起雾" class="headerlink" title="起雾"></a>起雾</h2><div style="height: 0;padding-bottom: 61%;position: relative;"><br><iframe width="560" height="315" src="http://player.youku.com/embed/XMTM4MTEwNDQ2NA" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe><br></div>
+
+<p><br><br>这才是 <strong><font color="#4590a3" size="5px">真。拟物</font></strong> 好不好！  </p>
+<p>再来个<em>风花雪月就</em>nice啦~</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">项目</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Arduino</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/10/12/weather-box/">全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-smaster" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/10/smaster/">好久以前做的智能家居系统</a>
+    </h1>
+  
+
+        
+        <a href="/2015/10/10/smaster/" class="archive-article-date">
+  	<time datetime="2015-10-10T13:47:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>大二计算机网络课的作业，搬过来看看，原帖及教程发在极客工坊。</p>
+</blockquote>
+<div style="height: 0;padding-bottom: 61%;position: relative;"><br><br><iframe width="560" height="315" src="http://player.youku.com/embed/XNjM1NTQ3MzU2" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe><br><br></div> 
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">怀旧物</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/10/10/smaster/">全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-float" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/10/float/">好久以前做的下推式磁悬浮装置</a>
+    </h1>
+  
+
+        
+        <a href="/2015/10/10/float/" class="archive-article-date">
+  	<time datetime="2015-10-10T13:47:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>这是大二时参加某电子设计比赛的作品，搬过来看看，原帖及教程发在极客工坊。</p>
+</blockquote>
+<div style="height: 0;padding-bottom: 61%;position: relative;"><br><br><iframe width="560" height="315" src="http://player.youku.com/embed/XNzI1MDcxNTQw" frameborder="0" allowfullscreen style="position: absolute;height: 100%;width: 100%;"></iframe><br></div>  
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">怀旧物</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/10/10/float/">全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-DMC4se" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/04/DMC4se/">传奇黑暗骑士</a>
+    </h1>
+  
+
+        
+        <a href="/2015/10/04/DMC4se/" class="archive-article-date">
+  	<time datetime="2015-10-04T15:31:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>时隔7年鬼泣出新作啦，为了V哥下的27个G的<strong><em>鬼泣4特别版</em></strong><br>结果渣笔电跑不动，全程幻灯片  </p>
+<p>这可是7年前的游戏啊。。。。。  </p>
+<p>不过V哥还是一如既往的嘲讽和装X，华丽得不行不行的啊  o(〃’▽’〃)o<br>作了一幅渣画，名为<strong><em>《如果有来世我愿做一只V哥》</em></strong>  </p>
+<p><img src="/img/vergil.jpg" alt="vergil"></p>
 
       
 
@@ -564,9 +631,86 @@ var _hmt = _hmt || [];
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">文艺复兴</a>
         		</li>
-      		 
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/10/04/DMC4se/">全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/01/hello-world/">Hello World</a>
+    </h1>
+  
+
+        
+        <a href="/2015/10/01/hello-world/" class="archive-article-date">
+  	<time datetime="2015-10-01T01:56:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-10-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这是我第一次建站，这段时间囫囵吞枣学了点前端基础，折腾了三天终于把网站部署好了。看到Chrome中网页成功加载出来的那一刻，心里有种新世界大门向我打开的感觉…</p>
+<p>其实最近十分的忙，但是莫名其妙地，脑海里始终觉得<strong><em>会倒腾网站的人闪闪发光</em></strong>，正好搜索发现阿里云那边域名打折（我这个xyz域名第一年只要4元），于是买了域名空间果断搞了起来。</p>
+<p>今后会在本站分享一些个人项目，教程心得，以及可恶的吹水（其实当码农也不错…）</p>
+<p><strong>祝我玩得开心</strong></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">生日快乐🎂</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
         		</li>
       		
 		</ul>
@@ -576,7 +720,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2016/02/14/valentine/">全文 >></a>
+          <a class="article-more-a" href="/2015/10/01/hello-world/">全文 >></a>
         </p>
       
 
@@ -608,7 +752,7 @@ var _hmt = _hmt || [];
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/5/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
     </nav>
   
 
@@ -682,6 +826,8 @@ MathJax.Hub.Queue(function() {
       
     
       
+      
+      
     
       
     
@@ -691,9 +837,11 @@ MathJax.Hub.Queue(function() {
     
     
       
-      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">搜索文章 &gt;&gt;</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">搜索文章 &gt;&gt;</a></li>
       
         
       
@@ -720,6 +868,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ARM</a>
               </li>
              
@@ -728,7 +884,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+                <a href="javascript:void(0)" class="js-tag color2">生日快乐🎂</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -740,35 +908,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">生日快乐🎂</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">C#</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">怀旧物</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">FPGA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Arduino</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -780,11 +924,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -793,6 +937,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
               </li>
             
             <div class="clearfix"></div>
@@ -838,6 +986,26 @@ MathJax.Hub.Queue(function() {
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://www.arduino.cn/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Arduino中文网</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://www.csksoft.net/blog/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>创友老陈</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://vkwk.space/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>同门师弟</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
     
 
     

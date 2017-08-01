@@ -22,7 +22,7 @@
 <meta property="og:image" content="http://pengzhihui.xyz/img/trace04.jpg">
 <meta property="og:image" content="http://pengzhihui.xyz/img/trace05.png">
 <meta property="og:image" content="http://pengzhihui.xyz/img/trace06.jpg">
-<meta property="og:updated_time" content="2017-07-12T10:41:23.000Z">
+<meta property="og:updated_time" content="2017-07-12T10:41:23.526Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="“迹”APP &amp; 目标追踪小车Tmp">
 <meta name="twitter:description" content="“迹” for Android   “迹”是一个基于OpenCV的图像处理APP，它可以让手机通过摄像头实时跟踪设定的颜色目标，并且通过手机蓝牙将目标坐标位置和大小等信息输出，配合蓝牙串口模块和我写的配套Arduino数据接收库，可以实现很多有趣的功能~ 这篇文章主要讲解一下“迹”的使用方法，以及如何通过目标追踪功能制作一个简单的小车。  APP软件运行界面：  安装方法  直接安装Trace.a">
@@ -90,9 +90,11 @@ var _hmt = _hmt || [];
 		<nav class="header-smart-menu">
     		
     			
-    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">搜索文章 &gt;&gt;</a>
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
+    			
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">搜索文章 &gt;&gt;</a>
     			
             
     			
@@ -499,6 +501,8 @@ MathJax.Hub.Queue(function() {
       
     
       
+      
+      
     
       
     
@@ -508,9 +512,11 @@ MathJax.Hub.Queue(function() {
     
     
       
-      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">搜索文章 &gt;&gt;</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">搜索文章 &gt;&gt;</a></li>
       
         
       
@@ -533,6 +539,18 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">项目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ARM</a>
               </li>
              
@@ -541,31 +559,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">项目</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">文艺复兴</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">谜之DIY</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Rhino</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">生日快乐🎂</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">C#</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -581,15 +575,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
+                <a href="javascript:void(0)" class="js-tag color5">JAVA</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
+                <a href="javascript:void(0)" class="js-tag color1">Rhino</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">C#</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">FPGA</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -601,7 +603,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
+                <a href="javascript:void(0)" class="js-tag color5">机器学习</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -610,6 +612,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">HTML</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">OpenCV</a>
               </li>
             
             <div class="clearfix"></div>
@@ -655,6 +661,26 @@ MathJax.Hub.Queue(function() {
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="http://www.arduino.cn/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Arduino中文网</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://www.csksoft.net/blog/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>创友老陈</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://vkwk.space/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>同门师弟</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
     
 
     
